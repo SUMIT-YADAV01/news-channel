@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global News Channel</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f5f5;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #c62828, #e53935);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navbar */
+nav {
+    background: #222;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #444;
+}
+
+/* Breaking News */
+.breaking {
+    background: #ffcc00;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background: rgba(0,0,0,0.6);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Main Content */
+.main {
+    flex: 3;
+}
+
+/* Cards */
+.card {
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+}
+
+.sidebar-box {
+    background: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌍 Global News Channel</h1>
+    <p>Fast. Reliable. Real News.</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Politics</a>
+    <a href="#">Business</a>
+    <a href="#">Technology</a>
+    <a href="#">Sports</a>
+</nav>
+
+<div class="breaking">
+    🔴 Breaking: Major international developments unfolding now
+</div>
+
+<!-- Hero Section -->
+<div class="hero">
+    <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c" alt="Breaking News">
+    <div class="hero-text">
+        <h2>World Leaders Meet for Emergency Summit</h2>
+        <p>Global tensions rise as urgent talks begin.</p>
+    </div>
+</div>
+
+<div class="container">
+
+    <div class="main">
+
+        <div class="card">
+            <img src="https://media.assettype.com/analyticsinsight%2F2026-03-09%2Fgfghbvyc%2FUS-Stock-Market-Today-sdcza.jpg?w=1024&auto=format%2Ccompress&fit=max">
+            <div class="card-content">
+                <h3>Stock Markets Surge</h3>
+                <p>Markets worldwide show strong recovery amid positive economic signals.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f">
+            <div class="card-content">
+                <h3>Tech Innovation Boom</h3>
+                <p>AI and robotics are reshaping industries faster than ever.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://img.vavel.com/s2-1768549593788.png">
+            <div class="card-content">
+                <h3>Sports Championship Highlights</h3>
+                <p>An unforgettable finale leaves fans in awe.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="sidebar">
+
+        <div class="sidebar-box">
+            <h3>🔥 Trending</h3>
+            <ul>
+                <li>Election updates</li>
+                <li>Crypto market moves</li>
+                <li>New iPhone launch</li>
+                <li>World Cup news</li>
+            </ul>
+        </div>
+
+        <div class="sidebar-box">
+            <h3>📺 Live TV</h3>
+            <p>Watch our 24/7 live broadcast.</p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Global News Channel | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
